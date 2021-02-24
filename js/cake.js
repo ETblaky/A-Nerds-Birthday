@@ -4,6 +4,7 @@ let anim = document.body.animate([{ opacity: 0 }, { opacity: 1 }], 1000);
 
 anim.onfinish = function () {
     document.body.style.opacity = 1;
+    confetti.start();
 }
 
 const queryString = window.location.search;
